@@ -1,25 +1,28 @@
 package fr.esiea.unique.binome.nguyensoumare.dictionary;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import fr.esiea.unique.binome.nguyensoumare.dictionary.IDictionary;
 
 /**
  * Unit test sample for Dictionary.
  */
 public class DictionaryTest {
 
-    private IDictionary dictionary;
+    private Dictionary dictionary;
 
     @Before
     public void setup() {
-        // TODO
+        dictionary = new Dictionary();
+
     }
 
     @Test
-    public void testIsWord() {
-        // assertTrue(dictionary.isWord("maman"));
-        // assertFalse(dictionary.isWord("namam"));
+    public void isAwordTest() {
+        String pkeyword = "successeur";
+        assertTrue(dictionary.isAword(pkeyword));
+
     }
+
 }
